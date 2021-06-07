@@ -1,0 +1,110 @@
+body{
+    
+    background-image: url("./images/pattern-bg.svg") , url("./images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    /* background-position: right; */
+    background-position-x: 90% ,0;
+    background-position-y: 0% , 26rem;
+    font-family: 'Inter', sans-serif;
+    color: hsl(240, 38%, 20%);
+}
+.slider{
+    margin-top: 10%;
+    display: none;
+}
+.texts{
+    background-image: url("./images/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-position-x: 25%;
+    padding-top: 5%;
+    font-size: 30px;
+    font-weight: 300;
+    position: absolute;
+    z-index: 99999999999999;
+}
+.info{
+    display:flex;
+     padding-top:4%;
+     
+}
+.texts h3{
+    font-size: 33px;
+    font-weight: 700;
+    padding-right: 3%;
+}
+.texts h4{
+    color:hsl(240, 18%, 77%);
+    font-weight: 400;
+} 
+
+.image{
+    position: absolute;
+    right: 8%;
+}
+.image img{
+    width: 90%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.22);
+}
+.sliderControls{
+    position: relative;
+    bottom: 18px;
+    left: 30px;
+    display: flex;
+    z-index: 999999999999999999999999;
+    cursor: pointer;  
+}
+#prev:hover, #next:hover {
+    background-color: hsl(240, 86%, 72%);
+  }
+#prev{
+    width: 40px;
+    height: 35px;
+    background-color: white;
+    border-bottom-left-radius: 45%;
+    border-top-left-radius: 45%;
+    background-image: url("./images/icon-prev.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#next{
+    width: 40px;
+    height: 35px;
+    background-color: white;
+    border-bottom-right-radius: 45%;
+    border-top-right-radius: 45%;
+    background-image: url("./images/icon-next.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (max-width: 700px) {
+    body{
+        background-size: 88%;
+        background-position-x: 54%,0;
+
+        background-position-y: -8% , 31rem;
+    }
+    .image{
+        margin-top: 3%;
+        text-align: center;
+        right: 3vmax;
+        left: 0;
+    }
+    .image img{
+        width: 15rem;
+    }
+    .texts{
+        top: 89vmin;
+        margin-top: 2rem;
+        font-size: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+    .info{
+        display: inline;
+    }
+    .info h3, h4{
+        font-size: 15px;
+    }
+}
+/*  */

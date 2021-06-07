@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row slider">
+      <div class="col-lg-7 col-sm-12 texts ">
+        <p class="animate__animated animate__fadeInLeft"> “ I’ve been interested in coding for a while but never taken the jump, until now. 
+          I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+          excited about the future. ” </p>
+          <div class="animate__animated animate__fadeInLeft info ">
+            <h3>Tanya Sinclair</h3>
+            <h4 class="pt-1">UX Engineer</h4>
+          </div>
+      </div>
+      <div class="col-lg-5 col-sm-12  image animate__animated animate__fadeInRight">
+        <div class="imgCl">
+          <img src="./images/image-tanya.jpg">
+          <div class="sliderControls">
+            <div id="prev" onclick="plusSlides(-1)"></div>
+            <div id="next" onclick="plusSlides(1)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <div class="row slider">
+      <div class="col-lg-7 col-sm-12 texts ">
+        <p class="animate__animated animate__fadeInLeft">  “ If you want to lay the best foundation possible I’d recommend taking this course. 
+          The depth the instructors go into is incredible. I now feel so confident about 
+          starting up as a professional developer. ”</p>
+          <div class="info animate__animated animate__fadeInLeft">
+            <h3>John Tarkpor</h3>
+            <h4>Junior Front-end Developer</h4>
+          </div>
+      </div>
+     <div class ="col-lg-5 col-sm-12  image animate__animated animate__fadeInRight">
+      <div class="imgCl">
+        <img src="./images/image-john.jpg">
+        <div class="sliderControls">
+          <div id="prev" onclick="plusSlides(-1)"></div>
+          <div id="next" onclick="plusSlides(1)"></div>
+        </div>
+      </div>
+     </div>
+    </div>
+  </div>
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
